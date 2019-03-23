@@ -11,6 +11,12 @@ The server is placed behind an Nginx proxy which is responsible for SSL terminat
 - Includes a sidekick app for automatically removing hosts due to be terminated by an autoscaling group (via autoscaling lifecycle hooks)
 - Mostly configurable with variables (happy to accept PRs for new vars)
 
+### TODO - jsamuel1
+- Use ALB & CertificateManager for SSL Termination
+- remove nginx
+- Use Secrets Manager for DB connection passwords
+- Use RDS Aurora MySQL Serverless
+
 ### Example usage
 
 Include the following in your Terraform config:
